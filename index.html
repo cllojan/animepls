@@ -4,32 +4,75 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
 
-    <link rel="stylesheet" href="assets/styles/styles.css">
+    <link rel="stylesheet" href="assets/styles/styles.css" />
     <title>Vite App</title>
   </head>
   <body>
-    <header >
+    <header>
       <div class="wrapper">
         <div id="start" class="header__uses">
-          <button class="toggle"><i class='bx bx-menu'></i></button>
-          <h3>anime</h3> 
+          <button id="btn-toggle" class="toggle">
+            <i class="bx bx-menu"></i>
+          </button>
+          <h3>anime</h3>
           <form action="">
-            <input type="text" placeholder="Buscar anime">
-          </form>         
+            <input class="search" type="text" placeholder="Buscar anime" />
+          </form>
         </div>
-        
+
         <div id="end">
           <div class="user">
-            <img src="http://thenewcode.com/assets/images/thumbnails/sarah-parmenter.jpeg" alt="" width="30px">
+            <img
+              src="http://thenewcode.com/assets/images/thumbnails/sarah-parmenter.jpeg"
+              alt=""
+              width="30px"
+            />
           </div>
         </div>
       </div>
     </header>
-    
+    <div class="sidebar" id="navbar">
+      <nav class="nav">
+        <div class="nav__list">
+          <a href="#" class="nav__link">
+            <i class="bx bx-home-alt-2 nav__icon"></i>
+            <span class="nav__name">Inicio</span>
+          </a>
+          <a href="#" class="nav__link">
+            <i class="bx bx-library nav__icon"></i>
+            <span class="nav__name">Directorio</span>
+          </a>
+          <a href="#" class="nav__link">
+            <i class="bx bx-bar-chart nav__icon"></i>
+            <span class="nav__name">Top</span>
+          </a>
+          <a href="#" class="nav__link">
+            <i class="bx bxs-bookmark-star nav__icon"></i>
+            <span class="nav__name">Data</span>
+          </a>
+          <a href="#" class="nav__link">
+            <i class="bx bxs-bookmark-star nav__icon"></i>
+            <span class="nav__name">Data</span>
+          </a>
+        </div>
+      </nav>
+    </div>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
